@@ -1,0 +1,1932 @@
+/* @font-face { 
+    font-family: 'Jelek_Type'; 
+    src: 
+        url('./fonts/Jelek_Type.otf')  
+        format('opentype'); 
+    font-weight: normal; 
+    font-style: normal; 
+} 
+@font-face { 
+    font-family: 'Helvetica'; 
+    src: 
+        url('./fonts/Helvetica.ttf')  
+        format('opentype'); 
+    font-weight: normal; 
+    font-style: normal; 
+} 
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter";
+    background-image: url('./image/bg_section_title.png');
+    width: 100%;
+    height: 100vh;
+    color: #797777;
+    overflow-x: hidden;
+}
+
+
+.main_header {
+    width: 100%;
+    height: 20vh;
+    transition: top 0.3s ease-in-out;
+    position: relative;
+}
+.main_header .marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    background-color: #F3511F;
+}
+
+.main_header .marquee .marquee-inner {
+    display: flex;
+    white-space: nowrap;
+    animation: marquee 30s linear infinite;
+    margin: auto;
+    height: 100%;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.main_header .marquee .marquee-inner .marquee-text {
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+.main_header .marquee .marquee-inner .marquee-text img {
+    padding: 0 0.5rem;
+}
+.main_header .marquee .marquee-inner .marquee-text span {
+    padding: 0 0.5rem;
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+.main_header .header_wrap {
+    padding: 44px 98px 35px 71px;
+}
+.main_header .header_wrap .header_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main_header .header_wrap .header_block .header_side_left,
+.main_header .header_wrap .header_block .header_side_right {
+    display: flex;
+    align-items: center;
+}
+.main_header .header_wrap .header_block .header_side_left a,
+.main_header .header_wrap .header_block .header_side_right a {
+    font-size: 25px;
+    font-weight: 400;
+    color: #797777;
+    text-decoration: none;
+    padding-left: 70px;
+    text-transform: uppercase;
+}
+.main_header .header_wrap .header_block .header_side_left a:hover,
+.main_header .header_wrap .header_block .header_side_right a:hover { 
+    color: #fff;
+    transition: 1s ease-in-out;
+}
+
+
+
+
+.vse_crypto_page_title {
+    padding: 44px 100px 35px 71px;
+    height: 75vh;
+    transition: margin-top 0.3s ease-in-out;
+}
+.vse_crypto_page_title .container {
+    display: flex;
+    flex-direction: column;
+}
+.vse_crypto_page_title .container .program_count_lesson {
+    display: grid;
+    justify-content: end;
+}
+.vse_crypto_page_title .container .program_count_lesson p {
+    font-weight: 400;
+    font-size: 40px;
+    color: #797777;
+    margin: 0;
+    text-transform: uppercase;
+}
+.vse_crypto_page_title .container .program_count_lesson .title_ch_color {
+    color: #F3511F;
+}
+.vse_crypto_page_title .container .program_count_lesson h2 {
+    font-size: 60px;
+    font-family: 'Helvetica', sans-serif;
+    color: #FFFFFF;
+    margin: 0;
+    text-transform: uppercase;
+}
+.vse_crypto_page_title .container .title_message {
+    margin: 150px auto;
+
+}
+.vse_crypto_page_title .container .title_message h1 {
+    font-family: 'Jelek_Type', sans-serif;
+    font-size: 100px;
+    font-weight: 400;
+    width: 80%;
+    text-align: center;
+    color:#FFFFFF;
+    margin: 0 auto;
+}
+.vse_crypto_page_title .container .title_message .title_ch_color {
+    color: #F3511F
+}
+.vse_crypto_page_title .container .detail_info {
+    display: flex;
+    justify-content: space-between;
+}
+.vse_crypto_page_title .container .detail_info .text_invite {
+    width: 391px;
+    height: 108px;
+}
+.vse_crypto_page_title .container .detail_info .text_invite p {
+    font-size: 30px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin: 0;
+}
+.vse_crypto_page_title .container .detail_info .text_invite p:nth-child(1) {
+    margin-left: 60px;
+}
+.vse_crypto_page_title .container .detail_info .next_page {
+    display: flex;
+    gap: 40px;
+    height: 93px;
+}
+.vse_crypto_page_title .container .detail_info .next_page span {
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+
+.vse_crypto_page_for_whom {
+    height: 100vh;
+    width: 100%;
+    background-image: url('./image/bg_section_for_whom.png');
+    transition: margin-top 0.3s ease-in-out;
+}
+.vse_crypto_page_for_whom .for_whom_title {
+    height: 85px;
+    display: flex;
+    padding: 27px 71px 28px 100px;
+    align-items: center;
+}
+.vse_crypto_page_for_whom .for_whom_title span {
+    color: #000;
+    font-size: 70px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+.vse_crypto_page_for_whom .for_whom_title span:nth-child(3) {
+    color: #F3511F;
+}
+.vse_crypto_page_for_whom .description_wrap {
+    display: grid;
+    gap: 15px;
+    padding: 0 71px 0 100px;
+}
+.vse_crypto_page_for_whom .description_wrap .description_block {
+    display: flex;
+    justify-content: space-between;
+}
+.vse_crypto_page_for_whom .description_wrap .description_block p {
+    color: #797777;
+    font-weight: 400;
+    margin: 0;
+    font-size: 25px;
+}
+.vse_crypto_page_for_whom .description_wrap .description_block .description_text {
+    width: 665px;
+    height: 280px;
+}
+.vse_crypto_page_for_whom .description_wrap .description_block:nth-child(1) .description_text {
+    background-color: #F3511F;
+}
+.vse_crypto_page_for_whom .description_wrap .description_block:nth-child(2) .description_text {
+    background-color: #000000;
+}
+.vse_crypto_page_for_whom .description_wrap .description_block:nth-child(3) .description_text {
+    background-color: #797777;
+}
+.vse_crypto_page_for_whom .description_wrap .description_block .description_text .title {
+    display: flex;
+    gap: 25px;
+    margin-top: 34px;
+    margin-left: 37px;
+}
+.vse_crypto_page_for_whom .description_wrap .description_block .description_text .title h2 {
+    font-size: 30px;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+}
+.vse_crypto_page_for_whom .description_wrap .description_block .description_text .title img {
+    display: flex;
+}
+.vse_crypto_page_for_whom .description_wrap .description_block .description_text p {
+    color: #FFFFFF;
+    font-size: 26px;
+    font-weight: 200;
+    margin: 0;
+    width: 558px;
+    height: 124px;
+    margin-left: 37px;
+    margin-top: 37px;
+}
+
+.learn {
+    width: 100%;
+
+    height: auto;
+    background-color: #000000;
+    transition: margin-top 0.3s ease-in-out;
+}
+
+.learn .learn_wrap .title_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 89px 60px 89px;
+}
+.learn .learn_wrap .title_block  .title_info {
+    display: grid;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+    
+}
+.learn .learn_wrap .title_block .title_word {
+    font-size: 134px;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+}
+.learn .learn_wrap .title_block .title_word:nth-of-type(2) {
+    color:#F3511F;
+}
+.learn .learn_wrap .title_block .title_info span {
+    height: 80px;
+    width: 700px;
+    text-align: center;
+    color: #797777;
+    font-weight: 100;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.learn .learn_wrap .steps_block {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 600px;
+    background-image: url(./image/bg_steps_block.png);
+    background-repeat: no-repeat;
+    padding: 0;
+    background-position-y: 50%;
+    position: relative;
+}
+.learn .learn_wrap .steps_block .item_wrap {
+    padding: 0 69px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.learn .learn_wrap .steps_block .item_wrap .item {
+    width: 400px;
+    height: 385px;
+    display: grid;
+    gap: 0;
+}
+.learn .learn_wrap .steps_block .item_wrap .item .item_step_num {
+    border-radius: 50%;
+    background-color: #F3511F;
+    justify-content: center;
+    font-size: 64px;
+    font-weight: 700;
+    width: 160px;
+    height: 160px;
+    color: #fff;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.learn .learn_wrap .steps_block .item_wrap .item .item_subtitle {
+    display: flex;
+    gap: 25px;
+    font-size: 40px;
+    font-weight: 200;
+    justify-content: center;
+    text-transform: uppercase;
+    margin: 0;
+    color: #fff;
+    align-items: center;
+}
+.learn .learn_wrap .steps_block .item_wrap .item .item_text {
+    font-size: 20px;
+    font-weight: 100;
+    color: #E5E6E5;
+    text-align: center;
+    margin: 0;
+}
+.learn .learn_wrap .steps_block .item_wrap .item:nth-child(1) {
+    margin-top: 235px;
+    position: relative;
+}
+.learn .learn_wrap .steps_block .item_wrap .item:nth-child(2) {
+    margin-top: 40px;
+}
+.learn .learn_wrap .steps_block .item_wrap .item:nth-child(3) {
+    margin-top: 235px;
+    position: relative;
+}
+.learn .learn_wrap .steps_block .item_wrap .item:nth-child(4) {
+    margin-top: 40px;
+}
+
+.program {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #000000;
+    transition: margin-top 0.3s ease-in-out;
+}
+.program .program_wrap {
+    padding: 30px 70px;
+}
+.program .program_wrap h2 {
+    text-align: start;
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 800;
+    color: #fff;
+}
+.program .program_wrap .program_container {
+    margin: 78px auto;
+    display: flex;
+    justify-content: center;
+}
+.program .program_wrap .program_container .program_info:nth-child(3) {
+    background-color: #F3511F;
+    height: 700px;
+    width: 500px;
+}
+.program .program_wrap .program_container .program_info:nth-child(3) h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 500;
+    margin: auto;
+    margin: 40px auto;
+    text-align: center;
+}
+.program .program_wrap .program_container .program_info:nth-child(3) p {
+    font-size: 300px;
+    font-weight: 900;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    font-family: "Inter", system-ui;
+}
+.program .program_wrap .program_container .taps {
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    display: block;
+}
+.program .program_wrap .program_container .taps img:nth-child(1) {
+    position: absolute;
+    top: 78%;
+    left: 4%;
+}
+.program .program_wrap .program_container .taps img:nth-child(2) {
+    display: block;
+    position: absolute;
+    z-index: 20;
+    right: 4%;
+    bottom: 78%;
+}
+
+
+.faq {
+    background-image: url('./image/bg_faq.png');
+    width: 100%;
+    height: 50vh;
+    transition: margin-top 0.3s ease-in-out;
+}
+
+.nav-buttons {
+    position: fixed;
+    top: 50%;
+    right: 35px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    z-index: 30;
+}
+
+.nav-buttons button {
+    padding: 5px;
+    background-color: #F3511F;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.nav-buttons button:hover {
+    background-color: #fff;
+}
+@media (min-width: 1700px) and (max-width: 1919px) {
+    .vse_crypto_page_title {
+        max-width: 1700px;
+    }
+    
+    .main_header .header_wrap .header_block .header_side_left a, 
+    .main_header .header_wrap .header_block .header_side_right a { 
+        font-size: 20px;
+    }
+    .main_header .header_wrap .header_block .header_side_left img {
+        width: 25%;
+    }
+
+    .vse_crypto_page_title .container .program_count_lesson p {
+        font-size: 35px;
+    }
+    .vse_crypto_page_title .container .program_count_lesson h2 {
+        font-size: 50px;
+    }
+    .vse_crypto_page_title .container .title_message h1 {
+        font-size: 80px;
+    }
+    .vse_crypto_page_title .container .detail_info .next_page span {
+        font-size: 35px;
+    }
+    .vse_crypto_page_title .container .detail_info .next_page img {
+        width: 20%;
+    }
+    .vse_crypto_page_for_whom .description_wrap .description_block .description_text {
+        height: 250px;
+    }
+
+    .learn .learn_wrap .title_block .title_word {
+        font-size: 75px;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item {
+        width: 325px;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item .item_step_num {
+        width: 125px;
+        height: 125px;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item {
+        grid-template-rows: 0.1fr 0.3fr 0.5fr;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item .item_text {
+        font-size: 18px;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item:nth-child(2) {
+        margin-top: 75px;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item:nth-child(1),
+    .learn .learn_wrap .steps_block .item_wrap .item:nth-child(3) {
+        margin-top: 275px;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item .item_subtitle {
+        font-size: 30px;
+    }
+    .learn .learn_wrap .title_block .title_info span {
+        font-size: 20px;
+    }
+    .learn { 
+        height: 100vh;
+    }
+    .program .program_wrap h2 { 
+        font-size: 50px;
+        margin-top: 0;
+    }
+    .program .program_wrap .program_container .taps img:nth-child(1) {
+        top: 80%;
+        left: 6%;
+    }
+    .program .program_wrap .program_container .taps img:nth-child(2) {
+        right: 6%;
+        bottom: 78%;
+    }
+    .program_info {
+        width: 400px;
+        height: 700px;
+    }
+    .program_info img {
+        width: 400px;
+        height: 100%;
+    }
+    .program .program_wrap .program_container {
+
+        margin: 0 auto;
+    }
+    .program .program_wrap .program_container .program_info:nth-child(3) {
+        width: 400px;
+    }
+    .program .program_wrap .program_container .program_info:nth-child(3) h3 {
+        font-size: 50px;
+    }
+    .program .program_wrap .program_container .program_info:nth-child(3) p {
+        font-size: 250px;
+    }
+}
+@media (min-width: 1440px) and (max-width: 1600px) {
+    .vse_crypto_page_title {
+        max-width: 1440px;
+    }
+    .main_header .header_wrap .header_block .header_side_left a, 
+    .main_header .header_wrap .header_block .header_side_right a { 
+        font-size: 20px;
+    }
+    .main_header .header_wrap .header_block .header_side_left img {
+        width: 25%;
+    }
+    .vse_crypto_page_title .container .program_count_lesson p {
+        font-size: 35px;
+    }
+    .vse_crypto_page_title .container .program_count_lesson h2 {
+        font-size: 50px;
+    }
+    .vse_crypto_page_title .container .title_message h1 {
+        font-size: 80px;
+    }
+    .vse_crypto_page_title .container .detail_info .next_page span {
+        font-size: 35px;
+    }
+    .vse_crypto_page_title .container .detail_info .next_page img {
+        width: 20%;
+    }
+
+    .learn .learn_wrap .title_block .title_word {
+        font-size: 75px;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item {
+        width: 325px;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item .item_step_num {
+        width: 125px;
+        height: 125px;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item {
+        grid-template-rows: 0.1fr 0.3fr 0.5fr;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item .item_text {
+        font-size: 18px;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item:nth-child(2) {
+        margin-top: 75px;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item:nth-child(1),
+    .learn .learn_wrap .steps_block .item_wrap .item:nth-child(3) {
+        margin-top: 275px;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item .item_subtitle {
+        font-size: 30px;
+    }
+    .learn .learn_wrap .title_block .title_info span {
+        font-size: 20px;
+    }
+    .learn { 
+        height: 100vh;
+    }
+    .program .program_wrap h2 { 
+        font-size: 60px;
+    }
+    .program .program_wrap .program_container .taps img:nth-child(1) {
+        top: 80%;
+        left: 0%;
+    }
+    .program .program_wrap .program_container .taps img:nth-child(2) {
+        right: 0%;
+        bottom: 78%;
+    }
+    .program_info {
+        width: 400px;
+        height: 700px;
+    }
+    .program_info img {
+        width: 400px;
+        height: 100%;
+    }
+    .program .program_wrap .program_container .program_info:nth-child(3) {
+        width: 400px;
+    }
+    .program .program_wrap .program_container .program_info:nth-child(3) h3 {
+        font-size: 50px;
+    }
+    .program .program_wrap .program_container .program_info:nth-child(3) p {
+        font-size: 250px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1200px) { 
+    .vse_crypto_page_title {
+        max-width: 1024px;
+    }
+    .main_header .header_wrap .header_block .header_side_left a, 
+    .main_header .header_wrap .header_block .header_side_right a {
+        font-size: 18px;
+        padding-left: 40px;
+    }
+    .vse_crypto_page_title .container {
+        gap: 80px;
+    }
+    .vse_crypto_page_title .container .program_count_lesson p {
+        font-size: 30px;
+    }
+    .vse_crypto_page_title .container .program_count_lesson h2 {
+        font-size: 40px;
+    }
+    .vse_crypto_page_title .container .title_message h1 {
+        font-size: 65px;
+    }
+    .vse_crypto_page_title .container .detail_info .text_invite p {
+        font-size: 25px;
+    }
+    .vse_crypto_page_title .container .detail_info .next_page span {
+        font-size: 30px;
+    }
+    .vse_crypto_page_title .container .detail_info .next_page img {
+        width: 18%;
+    }
+    .learn .learn_wrap .title_block {
+
+    }
+    .learn .learn_wrap .title_block .title_word {
+        font-size: 60px;
+    }
+    .learn .learn_wrap .title_block .title_info span {
+        font-size: 20px;
+        width: 400px;
+        margin-top: 20px;
+        height: 100px;
+    }
+    .learn .learn_wrap .steps_block {
+        display: flex;
+        width: 100%;
+        height: auto;
+        background-image: none;
+        position: relative;
+        flex-direction: column;
+        position: relative;
+    }
+    .learn .learn_wrap .steps_block .item_wrap {
+        grid-template-rows: 0.9fr 0.9fr 0.9fr 0.9fr !important;
+        grid-template-columns: none;
+        padding: 0;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item {
+        width: 400px;
+        height: 385px;
+        display: flex;
+        gap: 50px;
+        margin: 0 auto;
+        flex-flow: column;;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item:nth-child(1) {
+        margin-top: 0;
+        position: relative;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item:nth-child(2) {
+        margin-top: 50px;
+        flex-direction: column-reverse;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item:nth-child(3) {
+        margin-top: 50px;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item:nth-child(4) {
+        margin-top: 50px;
+        flex-direction: column-reverse;
+    }
+    .program { 
+        height: auto;
+    }
+    .program .program_wrap .program_container {
+        align-items: center;
+    }
+    .program .program_wrap .program_container .taps img:nth-child(1), 
+    .program .program_wrap .program_container .taps img:nth-child(2) {
+        display: none;
+    }
+    .program .program_wrap .program_container .program_info {
+        width: 600px;
+        height: 600px;
+        margin: 0 auto;
+    }
+    .program .program_wrap .program_container .program_info img {
+        width: 100%;
+        height: 100%;
+    }
+    
+}
+@media (min-width: 700px) and (max-width: 1023px) {
+    .vse_crypto_page_title { 
+        height: 60vh;
+        width: 100%;
+        transition: margin-top 0.3s ease-in-out;
+        padding: 0 !important;
+
+        margin: 0;
+        max-width: 768px;
+    }
+    .main_header .header_wrap {
+
+        margin: 15px auto;
+        width: 95%;
+        padding: 0;
+    }
+    .main_header .header_wrap .header_block .header_side_left img {
+        width: 33%;
+    }
+    .main_header .header_wrap .header_block .header_side_left a, 
+    .main_header .header_wrap .header_block .header_side_right a {
+        font-size: 14px;
+        padding-left: 15px;
+    }
+    .vse_crypto_page_title .container .program_count_lesson {
+        padding: 0 20px;
+    }
+    .vse_crypto_page_title .container .program_count_lesson p {
+        font-size: 25px;
+    }
+    .vse_crypto_page_title .container .program_count_lesson h2 {
+        font-size: 30px;
+    }
+    .vse_crypto_page_title .container .title_message {
+        margin: 120px auto;
+    }
+    .vse_crypto_page_title .container .title_message h1 {
+        font-size: 55px;
+    }
+    .vse_crypto_page_title .container .detail_info {
+        padding: 0 20px;
+    }
+    .vse_crypto_page_title .container .detail_info .text_invite p {
+        font-size: 25px;
+    }
+    .vse_crypto_page_title .container .detail_info .text_invite p:nth-child(1) {
+        margin-left: 50px;
+    }
+    .vse_crypto_page_title .container .detail_info .next_page {
+        gap: 15px;
+    }
+    .vse_crypto_page_title .container .detail_info .next_page span {
+        font-size: 30px;
+    }
+    .vse_crypto_page_title .container .detail_info .next_page img {
+        width: 20%;
+    }
+
+
+    .vse_crypto_page_for_whom {
+        max-width: 768px;
+    }
+    .vse_crypto_page_for_whom .for_whom_title {
+        padding: 30px 20px;
+    }
+    .vse_crypto_page_for_whom .for_whom_title img {
+        width: 50%;
+    }
+    .vse_crypto_page_for_whom .description_wrap {
+        display: grid;
+        gap: 15px;
+        padding: 0 20px;
+    }
+    .vse_crypto_page_for_whom .description_wrap .description_block .description_text {
+        width: auto;
+        height: auto;
+    }
+
+    .learn {
+        max-width: 768px;
+    }
+    .learn .learn_wrap .title_block {
+        display: grid;
+        padding: 0 20px;
+        margin: 0 auto;
+        justify-content: center;
+        width: 100%;
+    }
+    .learn .learn_wrap .title_block .title_word {
+        font-size: 80px;
+        font-weight: 800;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .learn .learn_wrap .steps_block::before{
+        transform: rotate(90deg);
+        position: relative;
+    }
+    .learn .learn_wrap .steps_block {
+        display: flex;
+        width: 100%;
+        height: auto;
+        background-image: none;
+        position: relative;
+        flex-direction: column;
+        position: relative;
+    }
+    .learn .learn_wrap .steps_block .item_wrap {
+        grid-template-rows: 0.9fr 0.9fr 0.9fr 0.9fr !important;
+        grid-template-columns: none;
+        padding: 0;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item {
+        width: 400px;
+        height: 385px;
+        display: flex;
+        gap: 50px;
+        margin: 0 auto;
+        flex-flow: column;;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item:nth-child(1) {
+        margin-top: 0;
+        position: relative;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item:nth-child(2) {
+        margin-top: 50px;
+        flex-direction: column-reverse;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item:nth-child(3) {
+        margin-top: 50px;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item:nth-child(4) {
+        margin-top: 50px;
+        flex-direction: column-reverse;
+    }
+    .program { 
+        height: auto;
+    }
+    .program .program_wrap .program_container {
+        align-items: center;
+        flex-direction: column;
+    }
+    .program .program_wrap .program_container .taps img:nth-child(1), 
+    .program .program_wrap .program_container .taps img:nth-child(2) {
+        display: none;
+    }
+    .program .program_wrap .program_container .program_info {
+        width: 500px;
+        height: 700px;
+        margin: 0 auto;
+    }
+    .program .program_wrap .program_container .program_info img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+ */
+ @font-face { 
+    font-family: 'Jelek_Type'; 
+    src: url('./fonts/Jelek_Type.otf') format('opentype'); 
+    font-weight: normal; 
+    font-style: normal; 
+} 
+
+@font-face { 
+    font-family: 'Helvetica'; 
+    src: url('./fonts/Helvetica.ttf') format('opentype'); 
+    font-weight: normal; 
+    font-style: normal; 
+} 
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    background-image: url('./image/bg_section_title.png');
+    width: 100%;
+    height: 100vh;
+    color: #797777;
+    overflow-x: hidden;
+}
+
+/* Виправлений код для основного заголовку */
+.main_header {
+    width: 100%;
+    height: 20vh;
+    transition: top 0.3s ease-in-out;
+    position: relative;
+}
+
+.main_header .marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    background-color: #F3511F;
+}
+
+.main_header .marquee .marquee-inner {
+    display: flex;
+    white-space: nowrap;
+    animation: marquee 30s linear infinite;
+    margin: auto;
+    height: 100%;
+    -webkit-animation: marquee 30s linear infinite; /* для Safari та старих версій Chrome */
+    -moz-animation: marquee 30s linear infinite;    /* для Firefox */
+    -ms-animation: marquee 30s linear infinite;     /* для IE */
+    -o-animation: marquee 30s linear infinite;      /* для Opera */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes marquee { /* для Safari та старих версій Chrome */
+    0% {
+        -webkit-transform: translateX(100%);
+    }
+    100% {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@-moz-keyframes marquee { /* для Firefox */
+    0% {
+        -moz-transform: translateX(100%);
+    }
+    100% {
+        -moz-transform: translateX(-100%);
+    }
+}
+
+@-ms-keyframes marquee { /* для IE */
+    0% {
+        -ms-transform: translateX(100%);
+    }
+    100% {
+        -ms-transform: translateX(-100%);
+    }
+}
+
+@-o-keyframes marquee { /* для Opera */
+    0% {
+        -o-transform: translateX(100%);
+    }
+    100% {
+        -o-transform: translateX(-100%);
+    }
+}
+
+.main_header .marquee .marquee-inner .marquee-text {
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.main_header .marquee .marquee-inner .marquee-text img {
+    padding: 0 0.5rem;
+}
+
+.main_header .marquee .marquee-inner .marquee-text span {
+    padding: 0 0.5rem;
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.main_header .header_wrap {
+    padding: 44px 98px 35px 71px;
+}
+
+.main_header .header_wrap .header_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_header .header_wrap .header_block .header_side_left,
+.main_header .header_wrap .header_block .header_side_right {
+    display: flex;
+    align-items: center;
+}
+
+.main_header .header_wrap .header_block .header_side_left a,
+.main_header .header_wrap .header_block .header_side_right a {
+    font-size: 25px;
+    font-weight: 400;
+    color: #797777;
+    text-decoration: none;
+    padding-left: 70px;
+    text-transform: uppercase;
+    -webkit-transition: color 1s ease-in-out; /* для Safari та старих версій Chrome */
+    -moz-transition: color 1s ease-in-out;    /* для Firefox */
+    -ms-transition: color 1s ease-in-out;     /* для IE */
+    -o-transition: color 1s ease-in-out;      /* для Opera */
+    transition: color 1s ease-in-out;
+}
+
+.main_header .header_wrap .header_block .header_side_left a:hover,
+.main_header .header_wrap .header_block .header_side_right a:hover { 
+    color: #fff;
+}
+.vse_crypto_page_title {
+    padding: 44px 100px 35px 71px;
+    height: 75vh;
+    transition: margin-top 0.3s ease-in-out;
+    -webkit-transition: margin-top 0.3s ease-in-out; /* для Safari та старих версій Chrome */
+    -moz-transition: margin-top 0.3s ease-in-out;    /* для Firefox */
+    -ms-transition: margin-top 0.3s ease-in-out;     /* для IE */
+    -o-transition: margin-top 0.3s ease-in-out;      /* для Opera */
+}
+
+.vse_crypto_page_title .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.vse_crypto_page_title .container .program_count_lesson {
+    display: grid;
+    justify-content: end;
+}
+
+.vse_crypto_page_title .container .program_count_lesson p {
+    font-weight: 400;
+    font-size: 40px;
+    color: #797777;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.vse_crypto_page_title .container .program_count_lesson .title_ch_color {
+    color: #F3511F;
+}
+
+.vse_crypto_page_title .container .program_count_lesson h2 {
+    font-size: 60px;
+    font-family: 'Helvetica', sans-serif;
+    color: #FFFFFF;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.vse_crypto_page_title .container .title_message {
+    margin: 150px auto;
+}
+
+.vse_crypto_page_title .container .title_message h1 {
+    font-family: 'Jelek_Type', sans-serif;
+    font-size: 100px;
+    font-weight: 400;
+    width: 80%;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 auto;
+}
+
+.vse_crypto_page_title .container .title_message .title_ch_color {
+    color: #F3511F;
+}
+
+.vse_crypto_page_title .container .detail_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vse_crypto_page_title .container .detail_info .text_invite {
+    width: 391px;
+    height: 108px;
+}
+
+.vse_crypto_page_title .container .detail_info .text_invite p {
+    font-size: 30px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.vse_crypto_page_title .container .detail_info .text_invite p:nth-child(1) {
+    margin-left: 60px;
+}
+
+.vse_crypto_page_title .container .detail_info .next_page {
+    display: flex;
+    gap: 40px;
+    height: 93px;
+}
+
+.vse_crypto_page_title .container .detail_info .next_page span {
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 40px;
+}
+.vse_crypto_page_for_whom {
+    height: 100%;
+    width: 100%;
+    background-image: url('./image/bg_section_for_whom.png');
+    transition: margin-top 0.3s ease-in-out;
+    -webkit-transition: margin-top 0.3s ease-in-out; /* для Safari та старих версій Chrome */
+    -moz-transition: margin-top 0.3s ease-in-out;    /* для Firefox */
+    -ms-transition: margin-top 0.3s ease-in-out;     /* для IE */
+    -o-transition: margin-top 0.3s ease-in-out;      /* для Opera */
+}
+
+.vse_crypto_page_for_whom .for_whom_title {
+    height: 85px;
+    display: flex;
+    padding: 27px 71px 28px 100px;
+    align-items: center;
+}
+
+.vse_crypto_page_for_whom .for_whom_title span {
+    color: #000;
+    font-size: 70px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+.vse_crypto_page_for_whom .for_whom_title span:nth-child(3) {
+    color: #F3511F;
+}
+
+.vse_crypto_page_for_whom .description_wrap {
+    display: grid;
+    gap: 15px;
+    padding: 0 71px 0 100px;
+}
+
+.vse_crypto_page_for_whom .description_wrap .description_block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vse_crypto_page_for_whom .description_wrap .description_block p {
+    color: #797777;
+    font-weight: 400;
+    margin: 0;
+    font-size: 25px;
+}
+
+.vse_crypto_page_for_whom .description_wrap .description_block .description_text {
+    width: 665px;
+    height: 280px;
+}
+
+.vse_crypto_page_for_whom .description_wrap .description_block:nth-child(1) .description_text {
+    background-color: #F3511F;
+}
+
+.vse_crypto_page_for_whom .description_wrap .description_block:nth-child(2) .description_text {
+    background-color: #000000;
+}
+
+.vse_crypto_page_for_whom .description_wrap .description_block:nth-child(3) .description_text {
+    background-color: #797777;
+}
+
+.vse_crypto_page_for_whom .description_wrap .description_block .description_text .title {
+    display: flex;
+    gap: 25px;
+    margin-top: 34px;
+    margin-left: 37px;
+}
+
+.vse_crypto_page_for_whom .description_wrap .description_block .description_text .title h2 {
+    font-size: 30px;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.vse_crypto_page_for_whom .description_wrap .description_block .description_text .title img {
+    display: flex;
+}
+
+.vse_crypto_page_for_whom .description_wrap .description_block .description_text p {
+    color: #FFFFFF;
+    font-size: 26px;
+    font-weight: 200;
+    margin: 0;
+    width: 558px;
+    height: 124px;
+    margin-left: 37px;
+    margin-top: 37px;
+}
+.learn {
+    width: 100%;
+    height: auto;
+    background-color: #000000;
+    transition: margin-top 0.3s ease-in-out;
+    -webkit-transition: margin-top 0.3s ease-in-out; /* для Safari та старих версій Chrome */
+    -moz-transition: margin-top 0.3s ease-in-out;    /* для Firefox */
+    -ms-transition: margin-top 0.3s ease-in-out;     /* для IE */
+    -o-transition: margin-top 0.3s ease-in-out;      /* для Opera */
+}
+
+.learn .learn_wrap .title_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 89px 60px 89px;
+}
+
+.learn .learn_wrap .title_block .title_info {
+    display: grid;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+}
+
+.learn .learn_wrap .title_block .title_word {
+    font-size: 134px;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.learn .learn_wrap .title_block .title_word:nth-of-type(2) {
+    color: #F3511F;
+}
+
+.learn .learn_wrap .title_block .title_info span {
+    height: 80px;
+    width: 700px;
+    text-align: center;
+    color: #797777;
+    font-weight: 100;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.learn .learn_wrap .steps_block {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 600px;
+    background-image: url('./image/bg_steps_block.png');
+    background-repeat: no-repeat;
+    padding: 0;
+    background-position-y: 50%;
+    position: relative;
+}
+
+.learn .learn_wrap .steps_block .item_wrap {
+    padding: 0 69px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.learn .learn_wrap .steps_block .item_wrap .item {
+    width: 400px;
+    height: 385px;
+    display: grid;
+    gap: 0;
+}
+
+.learn .learn_wrap .steps_block .item_wrap .item .item_step_num {
+    border-radius: 50%;
+    background-color: #F3511F;
+    justify-content: center;
+    font-size: 64px;
+    font-weight: 700;
+    width: 160px;
+    height: 160px;
+    color: #fff;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.learn .learn_wrap .steps_block .item_wrap .item .item_subtitle {
+    display: flex;
+    gap: 25px;
+    font-size: 40px;
+    font-weight: 200;
+    justify-content: center;
+    text-transform: uppercase;
+    margin: 0;
+    color: #fff;
+    align-items: center;
+}
+
+.learn .learn_wrap .steps_block .item_wrap .item .item_text {
+    font-size: 20px;
+    font-weight: 100;
+    color: #E5E6E5;
+    text-align: center;
+    margin: 0;
+}
+
+.learn .learn_wrap .steps_block .item_wrap .item:nth-child(1) {
+    margin-top: 235px;
+    position: relative;
+}
+
+.learn .learn_wrap .steps_block .item_wrap .item:nth-child(2) {
+    margin-top: 40px;
+}
+
+.learn .learn_wrap .steps_block .item_wrap .item:nth-child(3) {
+    margin-top: 235px;
+    position: relative;
+}
+
+.learn .learn_wrap .steps_block .item_wrap .item:nth-child(4) {
+    margin-top: 40px;
+}
+.program {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #000000;
+    transition: margin-top 0.3s ease-in-out;
+    -webkit-transition: margin-top 0.3s ease-in-out; /* для Safari та старих версій Chrome */
+    -moz-transition: margin-top 0.3s ease-in-out;    /* для Firefox */
+    -ms-transition: margin-top 0.3s ease-in-out;     /* для IE */
+    -o-transition: margin-top 0.3s ease-in-out;      /* для Opera */
+}
+
+.program .program_wrap {
+    padding: 30px 70px;
+}
+
+.program .program_wrap h2 {
+    text-align: start;
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.program .program_wrap .program_container {
+    margin: 78px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.program .program_wrap .program_container .program_info:nth-child(3) {
+    background-color: #F3511F;
+    height: 700px;
+    width: 500px;
+}
+
+.program .program_wrap .program_container .program_info:nth-child(3) h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 500;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.program .program_wrap .program_container .program_info:nth-child(3) p {
+    font-size: 300px;
+    font-weight: 900;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    font-family: "Inter", system-ui;
+}
+
+.program .program_wrap .program_container .taps {
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    display: block;
+}
+
+.program .program_wrap .program_container .taps img:nth-child(1) {
+    position: absolute;
+    top: 78%;
+    left: 4%;
+}
+
+.program .program_wrap .program_container .taps img:nth-child(2) {
+    display: block;
+    position: absolute;
+    z-index: 20;
+    right: 4%;
+    bottom: 78%;
+}
+
+.faq {
+    background-image: url('./image/bg_faq.png');
+    width: 100%;
+    height: 50vh;
+    transition: margin-top 0.3s ease-in-out;
+    -webkit-transition: margin-top 0.3s ease-in-out; /* для Safari та старих версій Chrome */
+    -moz-transition: margin-top 0.3s ease-in-out;    /* для Firefox */
+    -ms-transition: margin-top 0.3s ease-in-out;     /* для IE */
+    -o-transition: margin-top 0.3s ease-in-out;      /* для Opera */
+}
+
+.nav-buttons {
+    position: fixed;
+    top: 50%;
+    right: 35px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    z-index: 30;
+}
+
+.nav-buttons button {
+    padding: 5px;
+    background-color: #F3511F;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease; /* для Safari та старих версій Chrome */
+    -moz-transition: background-color 0.3s ease;    /* для Firefox */
+    -ms-transition: background-color 0.3s ease;     /* для IE */
+    -o-transition: background-color 0.3s ease;      /* для Opera */
+}
+
+.nav-buttons button:hover {
+    background-color: #fff;
+}
+/* Медіа-запити для великих екранів (1700px - 1919px) */
+@media (min-width: 1700px) and (max-width: 1919px) {
+    .vse_crypto_page_title {
+        max-width: 1700px;
+    }
+
+    .main_header .header_wrap .header_block .header_side_left a, 
+    .main_header .header_wrap .header_block .header_side_right a { 
+        font-size: 20px;
+    }
+
+    .main_header .header_wrap .header_block .header_side_left img {
+        width: 25%;
+    }
+
+    .vse_crypto_page_title .container .program_count_lesson p {
+        font-size: 35px;
+    }
+    .vse_crypto_page_title .container .program_count_lesson h2 {
+        font-size: 50px;
+    }
+    .vse_crypto_page_title .container .title_message h1 {
+        font-size: 80px;
+    }
+    .vse_crypto_page_title .container .detail_info .next_page span {
+        font-size: 35px;
+    }
+    .vse_crypto_page_title .container .detail_info .next_page img {
+        width: 20%;
+    }
+    .vse_crypto_page_for_whom .description_wrap .description_block .description_text {
+        height: 250px;
+    }
+
+    .learn .learn_wrap .title_block .title_word {
+        font-size: 75px;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item {
+        width: 325px;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item .item_step_num {
+        width: 125px;
+        height: 125px;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item {
+        grid-template-rows: 0.1fr 0.3fr 0.5fr;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item .item_text {
+        font-size: 18px;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item:nth-child(2) {
+        margin-top: 75px;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item:nth-child(1),
+    .learn .learn_wrap .steps_block .item_wrap .item:nth-child(3) {
+        margin-top: 275px;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item .item_subtitle {
+        font-size: 30px;
+    }
+    .learn .learn_wrap .title_block .title_info span {
+        font-size: 20px;
+    }
+    .learn { 
+        height: 100vh;
+    }
+    .program .program_wrap h2 { 
+        font-size: 50px;
+        margin-top: 0;
+    }
+    .program .program_wrap .program_container .taps img:nth-child(1) {
+        top: 80%;
+        left: 6%;
+    }
+    .program .program_wrap .program_container .taps img:nth-child(2) {
+        right: 6%;
+        bottom: 78%;
+    }
+    .program_info {
+        width: 400px;
+        height: 700px;
+    }
+    .program_info img {
+        width: 400px;
+        height: 100%;
+    }
+    .program .program_wrap .program_container {
+        margin: 0 auto;
+    }
+    .program .program_wrap .program_container .program_info:nth-child(3) {
+        width: 400px;
+    }
+    .program .program_wrap .program_container .program_info:nth-child(3) h3 {
+        font-size: 50px;
+    }
+    .program .program_wrap .program_container .program_info:nth-child(3) p {
+        font-size: 250px;
+    }
+}
+
+/* Медіа-запити для середніх екранів (1440px - 1600px) */
+@media (min-width: 1440px) and (max-width: 1600px) {
+    .vse_crypto_page_title {
+        max-width: 1440px;
+    }
+    .main_header .header_wrap .header_block .header_side_left a, 
+    .main_header .header_wrap .header_block .header_side_right a { 
+        font-size: 20px;
+    }
+    .main_header .header_wrap .header_block .header_side_left img {
+        width: 25%;
+    }
+    .vse_crypto_page_title .container .program_count_lesson p {
+        font-size: 35px;
+    }
+    .vse_crypto_page_title .container .program_count_lesson h2 {
+        font-size: 50px;
+    }
+    .vse_crypto_page_title .container .title_message h1 {
+        font-size: 80px;
+    }
+    .vse_crypto_page_title .container .detail_info .next_page span {
+        font-size: 35px;
+    }
+    .vse_crypto_page_title .container .detail_info .next_page img {
+        width: 20%;
+    }
+
+    .learn .learn_wrap .title_block .title_word {
+        font-size: 75px;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item {
+        width: 325px;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item .item_step_num {
+        width: 125px;
+        height: 125px;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item {
+        grid-template-rows: 0.1fr 0.3fr 0.5fr;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item .item_text {
+        font-size: 18px;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item:nth-child(2) {
+        margin-top: 75px;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item:nth-child(1),
+    .learn .learn_wrap .steps_block .item_wrap .item:nth-child(3) {
+        margin-top: 275px;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item .item_subtitle {
+        font-size: 30px;
+    }
+    .learn .learn_wrap .title_block .title_info span {
+        font-size: 20px;
+    }
+    .learn { 
+        height: 100vh;
+    }
+    .program .program_wrap h2 { 
+        font-size: 60px;
+    }
+    .program .program_wrap .program_container .taps img:nth-child(1) {
+        top: 80%;
+        left: 0%;
+    }
+    .program .program_wrap .program_container .taps img:nth-child(2) {
+        right: 0%;
+        bottom: 78%;
+    }
+    .program_info {
+        width: 400px;
+        height: 700px;
+    }
+    .program_info img {
+        width: 400px;
+        height: 100%;
+    }
+    .program .program_wrap .program_container .program_info:nth-child(3) {
+        width: 400px;
+    }
+    .program .program_wrap .program_container .program_info:nth-child(3) h3 {
+        font-size: 50px;
+    }
+    .program .program_wrap .program_container .program_info:nth-child(3) p {
+        font-size: 250px;
+    }
+}
+
+/* Медіа-запити для менших екранів (1024px - 1200px) */
+@media (min-width: 1024px) and (max-width: 1200px) { 
+    .vse_crypto_page_title {
+        max-width: 1024px;
+    }
+    .main_header .header_wrap .header_block .header_side_left a, 
+    .main_header .header_wrap .header_block .header_side_right a {
+        font-size: 18px;
+        padding-left: 40px;
+    }
+    .vse_crypto_page_title .container {
+        gap: 80px;
+    }
+    .vse_crypto_page_title .container .program_count_lesson p {
+        font-size: 30px;
+    }
+    .vse_crypto_page_title .container .program_count_lesson h2 {
+        font-size: 40px;
+    }
+    .vse_crypto_page_title .container .title_message h1 {
+        font-size: 65px;
+    }
+    .vse_crypto_page_title .container .detail_info .text_invite p {
+        font-size: 25px;
+    }
+    .vse_crypto_page_title .container .detail_info .next_page span {
+        font-size: 30px;
+    }
+    .vse_crypto_page_title .container .detail_info .next_page img {
+        width: 18%;
+    }
+    .learn .learn_wrap .title_block .title_word {
+        font-size: 60px;
+    }
+    .learn .learn_wrap .title_block .title_info span {
+        font-size: 20px;
+        width: 400px;
+        margin-top: 20px;
+        height: 100px;
+    }
+    .learn .learn_wrap .steps_block {
+        display: flex;
+        width: 100%;
+        height: auto;
+        background-image: none;
+        position: relative;
+        flex-direction: column;
+    }
+    .learn .learn_wrap .steps_block .item_wrap {
+        grid-template-rows: 0.9fr 0.9fr 0.9fr 0.9fr !important;
+        grid-template-columns: none;
+        padding: 0;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item {
+        width: 400px;
+        height: 385px;
+        display: flex;
+        gap: 50px;
+        margin: 0 auto;
+        flex-flow: column;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item:nth-child(1) {
+        margin-top: 0;
+        position: relative;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item:nth-child(2) {
+        margin-top: 50px;
+        flex-direction: column-reverse;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item:nth-child(3) {
+        margin-top: 50px;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item:nth-child(4) {
+        margin-top: 50px;
+        flex-direction: column-reverse;
+    }
+    .program { 
+        height: auto;
+    }
+    .program .program_wrap .program_container {
+        align-items: center;
+    }
+    .program .program_wrap .program_container .taps img:nth-child(1), 
+    .program .program_wrap .program_container .taps img:nth-child(2) {
+        display: none;
+    }
+    .program .program_wrap .program_container .program_info {
+        width: 600px;
+        height: 600px;
+        margin: 0 auto;
+    }
+    .program .program_wrap .program_container .program_info img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Медіа-запити для найменших екранів (700px - 1023px) */
+@media (min-width: 700px) and (max-width: 1023px) {
+    .vse_crypto_page_title { 
+        height: 60vh;
+        width: 100%;
+        transition: margin-top 0.3s ease-in-out;
+        padding: 0 !important;
+        margin: 0;
+        max-width: 768px;
+    }
+    .main_header .header_wrap {
+        margin: 15px auto;
+        width: 95%;
+        padding: 0;
+    }
+    .main_header .header_wrap .header_block .header_side_left img {
+        width: 33%;
+    }
+    .main_header .header_wrap .header_block .header_side_left a, 
+    .main_header .header_wrap .header_block .header_side_right a {
+        font-size: 14px;
+        padding-left: 15px;
+    }
+    .vse_crypto_page_title .container .program_count_lesson {
+        padding: 0 20px;
+    }
+    .vse_crypto_page_title .container .program_count_lesson p {
+        font-size: 25px;
+    }
+    .vse_crypto_page_title .container .program_count_lesson h2 {
+        font-size: 30px;
+    }
+    .vse_crypto_page_title .container .title_message {
+        margin: 120px auto;
+    }
+    .vse_crypto_page_title .container .title_message h1 {
+        font-size: 55px;
+    }
+    .vse_crypto_page_title .container .detail_info {
+        padding: 0 20px;
+    }
+    .vse_crypto_page_title .container .detail_info .text_invite p {
+        font-size: 25px;
+    }
+    .vse_crypto_page_title .container .detail_info .text_invite p:nth-child(1) {
+        margin-left: 50px;
+    }
+    .vse_crypto_page_title .container .detail_info .next_page {
+        gap: 15px;
+    }
+    .vse_crypto_page_title .container .detail_info .next_page span {
+        font-size: 30px;
+    }
+    .vse_crypto_page_title .container .detail_info .next_page img {
+        width: 20%;
+    }
+
+    .vse_crypto_page_for_whom {
+        max-width: 768px;
+    }
+    .vse_crypto_page_for_whom .for_whom_title {
+        padding: 30px 20px;
+    }
+    .vse_crypto_page_for_whom .for_whom_title img {
+        width: 50%;
+    }
+    .vse_crypto_page_for_whom .description_wrap {
+        display: grid;
+        gap: 15px;
+        padding: 0 20px;
+    }
+    .vse_crypto_page_for_whom .description_wrap .description_block .description_text {
+        width: auto;
+        height: auto;
+    }
+
+    .learn {
+        max-width: 768px;
+    }
+    .learn .learn_wrap .title_block {
+        display: grid;
+        padding: 0 20px;
+        margin: 0 auto;
+        justify-content: center;
+        width: 100%;
+    }
+    .learn .learn_wrap .title_block .title_word {
+        font-size: 80px;
+        font-weight: 800;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .learn .learn_wrap .steps_block::before {
+        transform: rotate(90deg);
+        position: relative;
+    }
+    .learn .learn_wrap .steps_block {
+        display: flex;
+        width: 100%;
+        height: auto;
+        background-image: none;
+        position: relative;
+        flex-direction: column;
+    }
+    .learn .learn_wrap .steps_block .item_wrap {
+        grid-template-rows: 0.9fr 0.9fr 0.9fr 0.9fr !important;
+        grid-template-columns: none;
+        padding: 0;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item {
+        width: 400px;
+        height: 385px;
+        display: flex;
+        gap: 50px;
+        margin: 0 auto;
+        flex-flow: column;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item:nth-child(1) {
+        margin-top: 0;
+        position: relative;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item:nth-child(2) {
+        margin-top: 50px;
+        flex-direction: column-reverse;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item:nth-child(3) {
+        margin-top: 50px;
+    }
+    .learn .learn_wrap .steps_block .item_wrap .item:nth-child(4) {
+        margin-top: 50px;
+        flex-direction: column-reverse;
+    }
+    .program { 
+        height: auto;
+    }
+    .program .program_wrap .program_container {
+        align-items: center;
+        flex-direction: column;
+    }
+    .program .program_wrap .program_container .taps img:nth-child(1), 
+    .program .program_wrap .program_container .taps img:nth-child(2) {
+        display: none;
+    }
+    .program .program_wrap .program_container .program_info {
+        width: 500px;
+        height: 700px;
+        margin: 0 auto;
+    }
+    .program .program_wrap .program_container .program_info img {
+        width: 100%;
+        height: 100%;
+    }
+}
